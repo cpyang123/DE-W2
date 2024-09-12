@@ -5,4 +5,5 @@
 # DE-W2
 This is mini project 2 of the IDS 706 class, we're generating a preliminary analysis of a sample housing price data. 
 
-See report.md for the sample report created.
+See the report.md file for the generated report. [Report](./report.md)
+
