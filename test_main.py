@@ -13,6 +13,8 @@ class Test_Main(unittest.TestCase):
 
     def test_check_files(self):
         self.assertTrue("sample.png" in os.listdir("fig/"))
+        self.assertTrue("sample2.png" in os.listdir("fig/"))
+        self.assertTrue("summary.png" in os.listdir("fig/"))
 
 
 if __name__ == "__main__":

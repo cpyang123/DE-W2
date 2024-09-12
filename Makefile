@@ -10,4 +10,7 @@ lint:
 test:
 	python -m pytest -cov=main test_main.py -v
 
-all: install format lint test
+report:
+	python generate-report.py
+
+all: install format lint test report

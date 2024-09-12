@@ -5,6 +5,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
 RUN apt-get update && apt-get -y install --no-install-recommends \
     3.10.14-venv \
    gcc 
+
+RUN apt install pandoc
    
 ARG USER="codespace"
 ARG VENV_PATH="/home/${USER}/venv"
