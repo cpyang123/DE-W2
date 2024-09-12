@@ -5,6 +5,4 @@
 # DE-W2
 This is mini project 2 of the IDS 706 class, we're generating a preliminary analysis of a sample housing price data. 
 
-<!-- [View Report]("housing_price_data.html) -->
-
-![Image](./fig/sample.png)
+See report.md for the sample report created.
