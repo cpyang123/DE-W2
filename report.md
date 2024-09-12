@@ -3,14 +3,14 @@
 
 Here's some summary data:
 
-![Summary Data](./fig/sample2.png)
+![Summary Data](./fig/summary.png)
 
 Here is a box 'n whisker graph containing all the columns of a the data.
 
-![Image](./fig/sample.png)
+![Box Plot 1](./fig/sample.png)
 
 
 After some cleaning, it'll look like: 
 
-![Image](./fig/sample2.png)
+![Box Plot 2](./fig/sample2.png)
 

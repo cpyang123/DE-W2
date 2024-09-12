@@ -42,4 +42,3 @@ table.scale(1, 2)
 
 # Show the plot with the table
 plt.savefig("fig/summary.png")
-

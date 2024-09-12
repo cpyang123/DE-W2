@@ -18,7 +18,7 @@ After some cleaning, it'll look like:
 
 
 # Open a file to write the markdown content
-with open("report.md", "w", encoding='utf-8') as file:
+with open("report.md", "w", encoding="utf-8") as file:
     file.write(markdown_text)
 
 print("Markdown file created!")
