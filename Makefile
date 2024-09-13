@@ -13,4 +13,13 @@ test:
 report:
 	python generate-report.py
 
+report-n-push:
+	python generate-report.py
+	git config --local user.email "cpyang@umich.edu"
+	git config --local user.name "Peter Yang"
+	git add .
+	git commit -m "Updated Report"
+	git push
+
+
 all: install format lint test report

@@ -6,6 +6,8 @@ sample_df = pd.read_csv("train.csv")
 summary = sample_df.describe()
 
 
+# Refactor this into Functions
+
 sample_df.head()
 
 # Drop the 'ID' column before plotting
