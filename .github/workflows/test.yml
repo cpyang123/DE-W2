@@ -35,9 +35,9 @@ jobs:
       - name: format with black 
         run: |
           make format
-      - name: generate report
+      - name: generate report and push
         run: | 
-          make report
+          make report-n-push
       # - name: deploy the app
       #   run: |
       #     make deploy
