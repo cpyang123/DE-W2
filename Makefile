@@ -14,7 +14,7 @@ report:
 	python generate-report.py
 
 report-n-push:
-	python generate-report.py
+	make report
 	git config --local user.email "cpyang@umich.edu"
 	git config --local user.name "Peter Yang"
 	git add .
@@ -22,4 +22,4 @@ report-n-push:
 	git push
 
 
-all: install format lint test report
+all: install format lint test report-n-push
