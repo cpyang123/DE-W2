@@ -15,7 +15,7 @@ report:
 
 report-n-push:
 	make report
-	@# Get the current status of the repository
+	@
 	STATUS=$(git status --porcelain); \
 	if [ -z "$STATUS" ]; then \
 		echo "No changes, all clean!"; \
