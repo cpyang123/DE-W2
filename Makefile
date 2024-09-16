@@ -15,11 +15,18 @@ report:
 
 report-n-push:
 	make report
-	git config --global user.email "cpyang@umich.edu"
-	git config --global user.name "Peter Yang"
-	git add .
-	git commit -m "Updated Report"
-	git push
+	@# Get the current status of the repository
+	STATUS=$(git status --porcelain); \
+	if [ -z "$STATUS" ]; then \
+		echo "No changes, all clean!"; \
+	else \
+		git config --global user.email "cpyang@umich.edu" ; \
+		git config --global user.name "Peter Yang" ; \
+		git add . ; \
+		git commit -m "Updated Report" ; \
+		git push ; \
+	fi \
+	
 
 	
 all: install format lint test report-n-push
