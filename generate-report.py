@@ -1,5 +1,10 @@
+import datetime
+
+ct = datetime.datetime.now()
+
 markdown_text = """
 # This is a sample report of the <train.csv> containing Californian house prices
+Date Stamp: """ + ct = datetime.datetime.now() + """
 
 Here's some summary data:
 
