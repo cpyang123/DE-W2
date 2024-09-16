@@ -15,15 +15,11 @@ report:
 
 report-n-push:
 	make report
-	STATUS=$(git status --porcelain)
-	if [ -z "$STATUS" ]; then
-	    git config --local user.email "cpyang@umich.edu"
-	    git config --local user.name "Peter Yang"
-	    git add .
-	    git commit -m "Updated Report"
-	    git push
-	else
-	    echo "No updates, the repository is clean."
-	fi
+        git config --local user.email "cpyang@umich.edu"
+        git config --local user.name "Peter Yang"
+        git add .
+        git commit -m "Updated Report"
+        git push
+
 	
 all: install format lint test report-n-push
