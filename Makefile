@@ -15,8 +15,8 @@ report:
 
 report-n-push:
 	make report
-	git config --local user.email "cpyang@umich.edu"
-	git config --local user.name "Peter Yang"
+	git config --global user.email "cpyang@umich.edu"
+	git config --global user.name "Peter Yang"
 	git add .
 	git commit -m "Updated Report"
 	git push
