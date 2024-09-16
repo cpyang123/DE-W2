@@ -17,14 +17,14 @@ report-n-push:
 	make report
 	@
 	STATUS=$(git status --porcelain); \
-	if [ -z "$STATUS" ]; then \
-		echo "No changes, all clean!"; \
-	else \
+	if [ -n "$STATUS" ]; then \
 		git config --global user.email "cpyang@umich.edu" ; \
 		git config --global user.name "Peter Yang" ; \
 		git add . ; \
 		git commit -m "Updated Report" ; \
 		git push ; \
+	else \
+		echo "No changes, all clean!"; \
 	fi \
 	
 
