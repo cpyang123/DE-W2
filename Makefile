@@ -15,7 +15,8 @@ report:
 
 report-n-push:
 	make report
-	if [ -n "$(git status --porcelain)" ]; then
+	STATUS=$(git status --porcelain)
+	if [ -z "$STATUS" ]; then
 	    git config --local user.email "cpyang@umich.edu"
 	    git config --local user.name "Peter Yang"
 	    git add .
